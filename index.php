@@ -47,7 +47,7 @@ function renderBoard(array $board): void
     foreach ($board as $row) {
         echo '<br>';
         foreach ($row as $item) {
-            echo '<button>'.$item.'</button>';
+            echo '<button style="color:red">'.$item.'</button>';
         }
     }
 }
