@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
 
@@ -39,13 +37,17 @@ function createBoard(int $n, string $value): array
     return $board;
 }
 
+/**
+ * @param array $board
+ */
 function renderBoard(array $board): void
 {
+    echo '<br>';
     echo '----------------BOARD----------------</br>';
     foreach ($board as $row) {
         echo '<br>';
         foreach ($row as $item) {
-            echo $item.' ';
+            echo '<button>'.$item.'</button>';
         }
     }
 }
