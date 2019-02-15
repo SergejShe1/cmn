@@ -42,7 +42,7 @@ function renderBoard(array $board): void
     foreach ($board as $row) {
     echo '<br>';
         foreach ($row as $item) {
-            if  ($board[a]%2)          //all black
+            if  ($board[a][i]%2)          //all black
             //if  ([i]%2)                    //all white
                 echo '<button class="square white">' . $item . '</button>';
             else
