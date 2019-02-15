@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <title>Chess Online</title>#
-
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -44,12 +44,25 @@ function renderBoard(array $board): void
 {
     echo '<br>';
     echo '----------------BOARD----------------</br>';
+
     foreach ($board as $row) {
+
+
+
         echo '<br>';
         foreach ($row as $item) {
-            echo '<button style="color:red">'.$item.'</button>';
-        }
+            //if  ($board[i][a]%2)          //all black
+            if  ([i]%2)                    //all white
+
+                echo '<button class="square white">' . $item . '</button>';
+            else
+                echo '<button class="square black">' . $item . '</button>';
+
+
+
+            }
     }
+    echo '<br>';
 }
 
 ?>
