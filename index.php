@@ -23,7 +23,6 @@ function setValue(array $board, int $i, int $a, string $value): array
     return $board;
 }
 
-
 function createBoard(int $n, string $value): array
 {
     $n++;
@@ -33,33 +32,21 @@ function createBoard(int $n, string $value): array
             $board[$i][$a] = $value;
         }
     }
-
     return $board;
 }
 
-/**
- * @param array $board
- */
 function renderBoard(array $board): void
 {
     echo '<br>';
     echo '----------------BOARD----------------</br>';
-
     foreach ($board as $row) {
-
-
-
-        echo '<br>';
+    echo '<br>';
         foreach ($row as $item) {
-            //if  ($board[i][a]%2)          //all black
-            if  ([i]%2)                    //all white
-
+            if  ($board[a]%2)          //all black
+            //if  ([i]%2)                    //all white
                 echo '<button class="square white">' . $item . '</button>';
             else
                 echo '<button class="square black">' . $item . '</button>';
-
-
-
             }
     }
     echo '<br>';
